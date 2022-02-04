@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from '../../Components/Header';
 import Calendar from '../../Components/Calendar';
@@ -25,14 +26,16 @@ const Diaries = styled.article``;
 const HomePresenter = () => {
   return (
     <Container>
-      <Header></Header>
+      <Header />
       <Content>
         <section>
           <Calendar></Calendar>
           <ColorLogs></ColorLogs>
         </section>
         <Diaries>
-          <h3>Diaries</h3>
+          <Link to="/diary">
+            <h3>Diaries</h3>
+          </Link>
         </Diaries>
       </Content>
     </Container>

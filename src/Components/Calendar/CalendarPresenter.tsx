@@ -6,8 +6,11 @@ import localeDate from 'dayjs/plugin/localeData';
 
 dayjs.extend(localeDate);
 
+const calendarWidth = 300;
+const cellSize = `${calendarWidth / 7}px`;
+
 const Container = styled.article`
-  width: 500px;
+  width: ${calendarWidth}px;
 `;
 
 const Header = styled.section`
@@ -16,7 +19,7 @@ const Header = styled.section`
   align-items: center;
   font-size: 24px;
   width: 100%;
-  height: calc(500px / 7);
+  height: ${cellSize};
   margin-bottom: 10px;
 `;
 
@@ -61,8 +64,8 @@ const calendarGrid = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(500px / 7);
-    height: calc(500px / 7);
+    width: ${cellSize};
+    height: ${cellSize};
     border: 1px solid #eee;
   }
 `;

@@ -11,9 +11,9 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
-    background-color: rgba(250, 250, 250, 1)
+    background-color: rgba(250, 250, 250, 1);
   }
 
   a {

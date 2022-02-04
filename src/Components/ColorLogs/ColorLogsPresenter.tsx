@@ -11,6 +11,9 @@ const Container = styled.article`
 
 const Title = styled.h3`
   height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 `;
 
 const LogGrid = styled.section`
